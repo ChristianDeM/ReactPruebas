@@ -37,5 +37,45 @@ No requiere instalacion por qque ya las tiene dentro de react.
 React
 
 sirve para  utlizar jsx un lenguaje parecido a HTML pero es javascript.
-para esto creamos un ``document.getElementById("root")`` para realizar la prueba 
+
+para esto creamos un ``document.getElementById("root")``  dentro de  ``ReactDom.render{};`` para realizar la prueba 
+
+Codigo dentro de index.js
+```
+ReactDom.render(
+    <div> Hola mundo</div>,
+    document.getElementById("root")
+);
+```
+
+Teniendo en cuenta que en el index.html  se encuentra ``<div id=root>`` nos mostrara ahora en pantalla Hola mundo 
+
+
+## APP.jsx
+
+creamos un archivo app.jsx podemo crear app.js pero con la extencios jsx damos a entender que es un componente especial para React.
+
+Ahora dentro de ``app.jsx`` importaremos a react nuevamente y luego gcrearemos una funcion  llamada app  donde retornara un mensaje  el cual pueda ser ledio en  el index.js
+
+```
+import react  from 'react';
+
+export function app(){
+    return(<div>Este div esta dendtro de app.jsx</div>)
+};
+```
+
+ahora en nuestro ``index.jsx``  importaremos a nuestra app de aap.jsx
+
+`` import { App } from './App' ``
+Quitamos el div anterior dejandolo de la siguiente manera
+
+```
+ReactDom.render(
+    <App/>,
+    document.getElementById("root")
+);
+
+```
+
 
