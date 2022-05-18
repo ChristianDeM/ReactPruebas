@@ -78,4 +78,52 @@ ReactDom.render(
 
 ```
 
+Ahora ya sabemos como son los componentes lo ideal seria crear una carpeta ``components`` donde se encuentren los componentes
+
+
+## TodoList y TodoItem
+
+Creamos  estos 2 archhivos dentro de components  para ver como es que  se van cambiando propiedades uno con el otros al igual que eventos. 
+
+DATO EXTRA  instalando extencion ES7 + react Esto nos sirve para  los snippets en react  
+con el texto ``rfs`` nos dara la estructura de  react.
+
+Ahora dentro de Todo list tenemos este codigo.
+
+```
+import React from 'react'
+
+export  function TodoList({ todos }) {
+  return (
+    <ul>
+        {todos.map((todo)=>(
+            <li> tarea</li>
+        ))}
+    </ul>
+  );
+}
+```
+
+Con rfc  tendremos el template  con export default pero lo ideal seria quitar default para acostumbranos a exportar  con el mismo nombre 
+
+Creamos un  .map con todos esto nos regresara una nueva lista  en este caso para hacer una lista de tareas
+
+denotro de App.js  importamos el componente 
+``import { TodoList } from './components/TodoList';``
+
+Ahora modificamos nuestra funcion  para mostrar  la lista
+
+```
+export function App(){
+    return<TodoList todos={[
+       {id:1,Tarea:'tarea'}
+    ]}/>
+};
+
+```
+Esta funcion creare un return de todos donde la entra se  id  y tarea
+
+
+ 
+
 

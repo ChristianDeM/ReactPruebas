@@ -1,5 +1,8 @@
-import React  from 'react';
+import React   from 'react';
+import { TodoList } from './components/TodoList';
 
 export function App(){
-    return(<div>Este div esta dendtro de app.jsx</div>)
+    return<TodoList todos={[
+       {id:1,Tarea:'tarea'}
+    ]}/>
 };
