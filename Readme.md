@@ -27,3 +27,15 @@
 <p> para esta prueba elminamos todo lo que hay dentro de src para crear y profrofundisar lo que hay en src
 <p> Puedes ver los cambios en los comits de este proyecto de purebas. 
 
+
+## index.js
+
+importando react y react-dom
+
+No requiere instalacion por qque ya las tiene dentro de react.
+
+React
+
+sirve para  utlizar jsx un lenguaje parecido a HTML pero es javascript.
+para esto creamos un ``document.getElementById("root")`` para realizar la prueba 
+
